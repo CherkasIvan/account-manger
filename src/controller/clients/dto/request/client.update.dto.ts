@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-import { IsString } from 'class-validator';
+import { IsString, IsDate } from 'class-validator';
 
 /**
  * DTO for update "Client"
@@ -11,7 +11,7 @@ export class ClientUpdateDto {
      */
     @ApiProperty({
         description: 'Name of client',
-        example: 'John Doe',
+        example: 'Иван Черкас',
     })
     @IsString()
     name?: string;
@@ -33,6 +33,6 @@ export class ClientUpdateDto {
         description: 'Birth date',
         example: '2020-10-11',
     })
-    @IsString()
+    @IsDate()
     birthDate?: string;
 }

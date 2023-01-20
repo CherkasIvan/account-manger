@@ -1,6 +1,12 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-import { IsBoolean, IsNumber, IsPositive, IsString } from 'class-validator';
+import {
+    IsBoolean,
+    IsDate,
+    IsNumber,
+    IsPositive,
+    IsUUID,
+} from 'class-validator';
 
 /**
  * DTO for creating "Account"
@@ -14,7 +20,7 @@ export class AccountCreateDto {
         example: '759ce177-ada1-4c78-a41e-6bea2eb5709b',
         required: true,
     })
-    @IsString()
+    @IsUUID()
     personId: string;
 
     /**
@@ -70,6 +76,6 @@ export class AccountCreateDto {
         description: 'date',
         example: '2020-10-11',
     })
-    @IsString()
+    @IsDate()
     createDate?: string;
 }

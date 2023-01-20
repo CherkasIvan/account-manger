@@ -11,7 +11,7 @@ export class LoginDto {
      */
     @ApiProperty({
         description: 'name',
-        example: 'John Doe',
+        example: 'Иван Черкас',
         required: true,
     })
     @IsString()
