@@ -9,7 +9,7 @@ withdraw money
 
 ## Preparing
 
-You should create `.env` file. It contains all the necessary variables for correct operation. Here are the need values:
+The .env file contains all the necessary variables for correct operation. Here is the value of the need
 
 | Name              | Description                               | Default value                   |
 |-------------------|-------------------------------------------|---------------------------------|
