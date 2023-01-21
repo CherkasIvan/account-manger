@@ -2,6 +2,7 @@
 /dist
 /node_modules
 /db_data
+/.vscode
 
 # Logs
 logs
